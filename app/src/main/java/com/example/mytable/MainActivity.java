@@ -65,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 1; i <= 10; i++){
             mulTable.add(table + " X " + i + " = " + table*i);
         }
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.
-                                            simple_list_item_1, mulTable);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mulTable);
         listView.setAdapter(arrayAdapter);
         textView.setText("Multiplication Table of " + table);
     }
