@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         seekBar = findViewById(R.id.seekBar);
 
 
-        seekBar.setMax(30);
+        seekBar.setMax(100);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
