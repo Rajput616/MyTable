@@ -1,7 +1,9 @@
 package com.example.mytable;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ArrayAdapter;
@@ -28,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         seekBar = findViewById(R.id.seekBar);
 
-
+        populate(0);
         seekBar.setMax(100);
+
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
